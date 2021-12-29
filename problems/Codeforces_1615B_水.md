@@ -1,20 +1,28 @@
 ## Codeforces_1615B And It's Non-Zero
 
+#### 链接
+
 [https://codeforces.com/contest/1615/problem/B]()
 
-题干：删掉最少数量的数字使得[l,r]区间内的数进行按位与后不为0
+#### 题干
 
-思路：统计[l,r]内的数字按照二进制拆分后，每一位的前缀和，可以得知区间内只要有一位按位与不为0即可，所以位为0的前缀和最少的位数即为所求
+删掉最少数量的数字使得[l,r]区间内的数进行按位与后不为0
 
-Input
+#### 思路
+
+统计[l,r]内的数字按照二进制拆分后，每一位的前缀和，可以得知区间内只要有一位按位与不为0即可，所以位为0的前缀和最少的位数即为所求
+
+#### Input
 
 The first line contains one integer t (1≤t≤10^4) — the number of test cases. Then t cases follow.
 
 The first line of each test case contains two integers l and r (1≤l≤r≤2⋅10^5) — the description of the array.
 
-Output
+#### Output
 
 For each test case, output a single integer — the answer to the problem.
+
+#### **Example**
 
 input
 
@@ -37,7 +45,7 @@ output
 31072
 ```
 
-题解代码
+#### 题解代码
 
 ```c++
 #include<bits/stdc++.h>
@@ -73,3 +81,7 @@ int main()
 }
 ```
 
+#### 运行结果
+
+| [B - And It's Non-Zero](https://codeforces.com/contest/1615/problem/B) | GNU C++17 | **Happy New Year!** | 78 ms | 23500 KB |
+| ------------------------------------------------------------ | --------- | ------------------- | ----- | -------- |
